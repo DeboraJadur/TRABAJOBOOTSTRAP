@@ -1,0 +1,42 @@
+/* styles.css */
+
+/* Estilos para el cuerpo de la página */
+body {
+    background-color: #000; /* Color de fondo negro */
+    color: #fff; /* Color de texto blanco */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Estilos para el contenedor del formulario */
+.form-container {
+    background-color: #333;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(86, 54, 182, 0.5);
+    width: 100%;
+    max-width: 400px; /* Ancho máximo del formulario */
+    text-align: center;
+    color: #fff; /* Color de texto blanco */
+}
+
+/* Media queries para pantallas medianas y pequeñas */
+@media (max-width: 768px) {
+    .form-container {
+        padding: 1.5rem; /* Reducir el padding en pantallas medianas */
+    }
+}
+
+@media (max-width: 480px) {
+    .form-container {
+        padding: 1rem; /* Reducir el padding en pantallas pequeñas */
+    }
+
+    h1 {
+        font-size: 20px; /* Reducir el tamaño del título en pantallas pequeñas */
+    }
+}

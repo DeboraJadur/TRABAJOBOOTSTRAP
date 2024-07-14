@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Datos</title>
+    <!-- Vincular el archivo CSS externo -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="form-container">
+        <form>
+            <h1>Formulario de Datos Personales</h1>
+            <!-- Campo Nombre -->
+            <div class="form-group">
+                <label for="nombres">Nombre:</label>
+                <input type="text" class="form-control" id="nombres" name="nombres" required>
+                <!-- La clase "form-control" de Bootstrap aplica estilos y ajusta el ancho automáticamente -->
+            </div>
+            <!-- Campo Apellido -->
+            <div class="form-group">
+                <label for="apellidos">Apellido:</label>
+                <input type="text" class="form-control" id="apellidos" name="apellidos" required>
+            </div>
+            <!-- Campo Email -->
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <!-- Campo Fecha de nacimiento -->
+            <div class="form-group">
+                <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+                <input type="date" class="form-control" id="fecha_nacimiento" name="fecha_nacimiento" required>
+            </div>
+            <!-- Campo País de residencia -->
+            <div class="form-group">
+                <label for="pais">País de residencia:</label>
+                <select class="form-control" id="pais" name="pais" required>
+                    <option value="argentina">Argentina</option>
+                    <option value="venezuela">Venezuela</option>
+                    <option value="chile">Chile</option>
+                </select>
+            </div>
+            <!-- Botón Enviar -->
+            <button type="submit" class="btn btn-warning btn-block">Enviar</button>
+            <!-- Botones adicionales -->
+            <button type="button" class="btn btn-secondary btn-block">Estilo 1</button>
+            <button type="button" class="btn btn-secondary btn-block">Estilo de Alto Contraste</button>
+        </form>
+    </div>
+</body>
+</html>
